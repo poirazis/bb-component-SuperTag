@@ -1,0 +1,59 @@
+{
+  "type": "component",
+  "metadata": {},
+  "schema": {
+    "name": "bb-component-SuperTag",
+    "friendlyName": "Super Tag",
+    "description": "A Tag Component for Budibase",
+    "icon": "Bookmark",
+    "settings": [
+      {
+        "type": "text",
+        "key": "text",
+        "label": "Text",
+        "defaultValue": "Tag"
+      },
+      {
+        "type": "icon",
+        "key": "icon",
+        "label": "Icon",
+        "defaultValue": "ri-bookmark-fill"
+      },
+      {
+        "type": "select",
+        "key": "size",
+        "label": "Size",
+        "options": [
+          { "label": "Small", "value": "small" },
+          { "label": "Medium", "value": "medium" },
+          { "label": "Large", "value": "large" }
+        ],
+        "defaultValue": "medium"
+      },
+      {
+        "type": "color",
+        "key": "color",
+        "label": "Color",
+        "defaultValue": "var(--spectrum-global-color-static-blue-800)"
+      },
+      {
+        "type": "color",
+        "key": "textColor",
+        "label": "Text Color",
+        "defaultValue": "var(--spectrum-global-color-gray-800)"
+      },
+      {
+        "type": "boolean",
+        "key": "hideable",
+        "label": "Hideable",
+        "defaultValue": false
+      },
+      {
+        "type": "event",
+        "key": "onHide",
+        "label": "On Hide",
+        "dependsOn": "hideable"
+      }
+    ]
+  }
+}
